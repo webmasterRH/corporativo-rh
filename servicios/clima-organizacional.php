@@ -1,0 +1,121 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/fontello.css">
+  <link rel="stylesheet" href="css/bt-4.css">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+  
+  <?php include('includes/header.php') ?>
+  <!-- Header -->
+  <div class="hero-mitad" style="background: url(img/clima-organizacional-hero.jpg) no-repeat center; ">
+      <div class="row p-0 m-0 d-flex align-items-center contenedor-texto-mitad text-center">
+        <div class="container">
+          <div class="row texto-inicio-home d-flex justify-content-end">
+            <div class="col-12 col-md-5">
+              <img data-aos="fade-down"
+                  data-aos-duration="1200"
+                  data-aos-once="true" src="img/clima-organizacional-blanco.png" class="img-fluid">
+              <h2 data-aos="fade-up"
+                  data-aos-duration="1200"
+                  data-aos-once="true">Clima Organizacional</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+     <?php include('includes/menu.php') ?>
+  </div>
+  <!-- Hero -->
+
+  <main class="mt-5">
+    <section>
+     <div class="container">
+       <div class="row p-0 m-0">
+         <div class="col-12 col-md-6 p-0 m-0 mb-3"
+              data-aos="fade-right"
+              data-aos-duration="1200"
+              data-aos-once="true">         
+           <div style="background: url(img/pic-clima.png) no-repeat center; height: 628px;" class="col-12 p-0 p-md-1 p-lg-5 d-flex align-items-end contenedor-imagen-servicio">
+             <div class="col-12">
+               <h3>Beneficios para la empresa</h3>
+               <ul>
+                            <li>Desarrollar una cultura de calidad</li>
+                            <li>Optimización de esfuerzo, tiempo y recursos</li>
+                            <li>Determinar el nivel de satisfacción de los colaboradores</li>
+                            <li>Identificar fuentes de conflicto laborales</li>
+                            <li>Aumento de productividad</li>
+                        </ul>
+             </div>
+           </div>
+         </div>
+         <div class="col-12 col-md-6 contenido-servicios"
+              data-aos="fade-left"
+              data-aos-duration="1200"
+              data-aos-once="true">
+           <p class="titulo">Los niveles de productividad de una empresa se relacionan directamente con los niveles de satisfacción laboral de los colaboradores.</p>
+          <p class="mt-4" style="color: #97bccc;">Y para ello, es necesario conocer lo que el personal siente y opina acerca de la organización.</p>
+
+          <p class="mt-4" style="color: #97bccc;">Nuestro servicio de <b>Clima Organizacional</b> incrementa el rendimiento de tu empresa a través de la creación de un entorno laboral positivo, brindando una mayor estabilidad y seguridad a los trabajadores.</p>
+
+          <p class="mt-4" style="color: #97bccc;">Mediante diferentes técnicas obtenemos el Clima Organizacional de tu empresa:</p>
+          <p class="mt-4" style="color: #97bccc;">Tipos de pruebas psicométricas laborales:</p>
+
+          <ul style="color: #97bccc;">
+            <li>Encuestas</li>
+            <li>Entrevistas</li>
+            <li>Observación</li>
+            <li>Análisis Documental</li>
+            <li>Dinámica de Grupo Debates</li>
+          </ul>
+          <p class="mt-4" style="color: #97bccc;">Te ofrecemos un diagnóstico completo, que te permitirá desarrollar un plan de acción con planes y estrategias de mejora de acuerdo a los resultados del estudio del Clima Organizacional.</p>
+         </div>
+       </div>
+     </div>
+    </section>
+  </main>
+
+  <?php include('includes/formulario-contacto.php') ?>
+  <!-- Formulario Contacto -->
+
+ <?php include('includes/footer.php') ?>
+  <!-- FOOTER -->
+
+  <script>
+      AOS.init();
+  </script>
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>

@@ -1,0 +1,883 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@media only screen and ( max-width: 480px ) {
+    
+  /* Aquí van los estilos para iPhone horizontal */
+    .ver-movil
+    {
+        display: inline-block !important;
+    }
+
+    .ocultar-movil
+    {
+        display: none !important;
+    }   
+}
+
+.ocultar-pc
+{
+    display: none;
+}
+
+.ver-pc
+{
+    display: inline-block;
+}
+
+header
+{
+    background-color: #27517c;
+    border-bottom: 1px solid #fff;
+}
+div.contenedor-header a
+{
+    border-left: 1px solid #fff;
+    transition: all .4s ease-in-out;
+    color: #fff;
+}
+div.contenedor-header a:last-child
+{
+    border-right: 1px solid #fff;
+}
+div.contenedor-header a:hover
+{
+    background-color: #1b3753;
+}
+div.contenedor-header
+{
+    color: #fff;
+    font-weight: 300;
+    font-size: .8em;
+}
+/*Header*/
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    border-top: 4px #27517c solid;
+    border-radius: 0;
+    -webkit-box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.75);
+}
+
+.dropdown-menu a
+{
+     color: #757575 !important;
+     text-transform: none !important;
+}
+
+div.hero-home
+{
+    background: url(../img/hero-home.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+div.hero-mitad
+{
+    
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    padding: 0;
+    margin: 0;
+}
+nav.menu
+{
+    width: 100%;
+    background-color: rgba(0,0,0,0) !important;
+    border-bottom: 1px solid #fff;
+}
+nav.menu div ul li a
+{
+    color: #efefef;
+    text-transform: uppercase;
+    transition: all .4s ease-in-out;
+}
+nav.menu div ul li a:hover
+{
+    color: #fff;
+}
+li.bolsa-de-trabajo-menu
+{
+    border: solid 1px #fff;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+li.bolsa-de-trabajo-menu a
+{
+   
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+li.bolsa-de-trabajo-menu:hover
+{
+    background: #4AA1D9;
+    border: solid 1px #4AA1D9;
+    border-radius: .4rem;
+}
+li.bolsa-de-trabajo-menu:hover > a
+{
+    color: #fff !important;
+}
+
+div.texto-inicio-home
+{
+    color: #fff;
+}
+
+div.texto-inicio-home h3
+{
+    font-size: 3.9rem;
+}
+div.texto-inicio-home h1
+{
+    font-size: 1.7em;
+    font-weight: 300;
+}
+
+.btn-mas-info
+{
+    border-radius: 1rem !important;
+}
+
+div.contenedor-texto-hero,
+div.contenedor-texto-mitad
+{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+
+div.contenedor-texto-mitad
+{
+    height: 50vh;
+}
+/*HEROOOOOOOOOOOOOOOOO*/
+
+.home-reclutamiento-personal
+{
+    background: rgba(122,152,249,1);
+background: -moz-linear-gradient(top, rgba(122,152,249,1) 0%, rgba(88,120,225,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(122,152,249,1)), color-stop(100%, rgba(88,120,225,1)));
+background: -webkit-linear-gradient(top, rgba(122,152,249,1) 0%, rgba(88,120,225,1) 100%);
+background: -o-linear-gradient(top, rgba(122,152,249,1) 0%, rgba(88,120,225,1) 100%);
+background: -ms-linear-gradient(top, rgba(122,152,249,1) 0%, rgba(88,120,225,1) 100%);
+background: linear-gradient(to bottom, rgba(122,152,249,1) 0%, rgba(88,120,225,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a98f9', endColorstr='#5878e1', GradientType=0 );
+}
+
+.home-socioeconomico
+{
+    background: rgba(147,220,116,1);
+background: -moz-linear-gradient(top, rgba(147,220,116,1) 0%, rgba(115,175,89,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(147,220,116,1)), color-stop(100%, rgba(115,175,89,1)));
+background: -webkit-linear-gradient(top, rgba(147,220,116,1) 0%, rgba(115,175,89,1) 100%);
+background: -o-linear-gradient(top, rgba(147,220,116,1) 0%, rgba(115,175,89,1) 100%);
+background: -ms-linear-gradient(top, rgba(147,220,116,1) 0%, rgba(115,175,89,1) 100%);
+background: linear-gradient(to bottom, rgba(147,220,116,1) 0%, rgba(115,175,89,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93dc74', endColorstr='#73af59', GradientType=0 );
+}
+
+.home-capacitacion
+{
+    background: rgba(74,229,229,1);
+background: -moz-linear-gradient(top, rgba(74,229,229,1) 0%, rgba(65,191,195,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(74,229,229,1)), color-stop(100%, rgba(65,191,195,1)));
+background: -webkit-linear-gradient(top, rgba(74,229,229,1) 0%, rgba(65,191,195,1) 100%);
+background: -o-linear-gradient(top, rgba(74,229,229,1) 0%, rgba(65,191,195,1) 100%);
+background: -ms-linear-gradient(top, rgba(74,229,229,1) 0%, rgba(65,191,195,1) 100%);
+background: linear-gradient(to bottom, rgba(74,229,229,1) 0%, rgba(65,191,195,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ae5e5', endColorstr='#41bfc3', GradientType=0 );
+    height: 213px;
+}
+
+.home-psicometrico
+{
+    background: rgba(248,136,220,1);
+background: -moz-linear-gradient(top, rgba(248,136,220,1) 0%, rgba(227,103,196,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(248,136,220,1)), color-stop(100%, rgba(227,103,196,1)));
+background: -webkit-linear-gradient(top, rgba(248,136,220,1) 0%, rgba(227,103,196,1) 100%);
+background: -o-linear-gradient(top, rgba(248,136,220,1) 0%, rgba(227,103,196,1) 100%);
+background: -ms-linear-gradient(top, rgba(248,136,220,1) 0%, rgba(227,103,196,1) 100%);
+background: linear-gradient(to bottom, rgba(248,136,220,1) 0%, rgba(227,103,196,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f888dc', endColorstr='#e367c4', GradientType=0 );
+}
+
+.home-organizacional
+{
+    background: rgba(252,219,110,1);
+background: -moz-linear-gradient(top, rgba(252,219,110,1) 0%, rgba(252,196,12,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(252,219,110,1)), color-stop(100%, rgba(252,196,12,1)));
+background: -webkit-linear-gradient(top, rgba(252,219,110,1) 0%, rgba(252,196,12,1) 100%);
+background: -o-linear-gradient(top, rgba(252,219,110,1) 0%, rgba(252,196,12,1) 100%);
+background: -ms-linear-gradient(top, rgba(252,219,110,1) 0%, rgba(252,196,12,1) 100%);
+background: linear-gradient(to bottom, rgba(252,219,110,1) 0%, rgba(252,196,12,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcdb6e', endColorstr='#fcc40c', GradientType=0 );
+height: 213px;
+}
+
+.home-360
+{
+    background: rgba(147,104,227,1);
+background: -moz-linear-gradient(top, rgba(147,104,227,1) 0%, rgba(121,77,201,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(147,104,227,1)), color-stop(100%, rgba(121,77,201,1)));
+background: -webkit-linear-gradient(top, rgba(147,104,227,1) 0%, rgba(121,77,201,1) 100%);
+background: -o-linear-gradient(top, rgba(147,104,227,1) 0%, rgba(121,77,201,1) 100%);
+background: -ms-linear-gradient(top, rgba(147,104,227,1) 0%, rgba(121,77,201,1) 100%);
+background: linear-gradient(to bottom, rgba(147,104,227,1) 0%, rgba(121,77,201,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9368e3', endColorstr='#794dc9', GradientType=0 );
+}
+
+.servicio-home
+{
+    border-radius: 8px;
+-webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+}
+
+.servicio-home p
+{
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.contenedor-servicios-home
+{
+    margin-top: 130px;
+}
+
+@media only screen and ( max-width: 1024px ) {
+    
+  .contenedor-servicios-home
+    {
+        margin-top: 15px;
+    }
+    
+}
+
+.servicio-margin-top
+{
+    transform: translateY(66px);
+    transition: all .4s ease-in-out;
+}
+
+@media only screen and ( max-width: 480px ) {
+    
+  .servicio-margin-top
+{
+    transform: translateY(0px);
+    transition: all .4s ease-in-out;
+}
+
+    
+}
+
+.servicio-margin-top a:link,
+.hover-home-servicio a:link
+{
+    width: 100%;
+    text-decoration: none;
+}
+
+h3.titulo-1,
+h3.titulo-2
+{
+    padding: 0 15px;
+    padding-bottom: 10px;
+    font-size: 1.7em;
+    font-weight: 400;
+    color: #5f889a;
+    border-bottom: 3px solid #5f889a; display: inline-block;
+
+}
+h3.titulo-2
+{
+    color: #fff;
+    border-bottom: 3px solid #fff; display: inline-block !important;
+}
+p.description-servicios-home,
+p.description-corporativo-home
+{
+    font-size: 1em;
+    color: #727272;
+}
+p.description-corporativo-home
+{
+    color: #fff;
+}
+
+.hover-home-servicio
+{
+    transition: all .4s ease-in-out;
+}
+
+.servicio-margin-top:hover
+{
+    transform: translateY(56px);
+}
+.hover-home-servicio:hover
+{
+    transform: translateY(-10px);
+}
+
+/*SERVICIOS HOME*/
+
+.fondo-descripcion-home
+{
+    background: url(../img/fondo-morado-home.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+/*DESCRIPCION CORPORATIVO HOME*/
+
+.form-home p
+{
+    color: #727272;
+}
+
+.form-control
+{
+    border-radius: 0px !important;
+    background-color: #eee !important;
+}
+
+.boton-formulario
+{
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    border-bottom: 3px solid #4288bf;
+    background-color: #52a9ee;
+    color: #fff;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+
+}
+
+.boton-formulario:hover
+{
+    background-color: #4288bf;
+}
+
+footer .nav-link
+{
+    padding: 0;
+    color: #fff;
+    font-size: .8em;
+}
+
+footer h3
+{
+    font-weight: 400 !important;
+    color: #fff;
+    font-size: 1.6em;
+}
+
+ul.contacto a
+{
+    cursor: default;
+}
+
+ul.contacto a:hover
+{
+    color: #fff;
+}
+
+/*FORM HOME*/
+
+
+.nav-nosotros
+{
+    color: #999999;
+}
+
+.nav-nosotros.activo
+{
+    color: #27517C;
+    border-bottom: 3px solid #27517C;
+}
+/*NOSOTROS*/
+.contenedor-servicio img
+{
+     transition: all .4s ease-in-out;
+}
+.contenedor-servicio:hover img
+{
+    transform: translateY(-15px);
+}
+.contenedor-servicio h2
+{
+    font-size: 1.2em;
+    margin-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #989898;
+    font-weight: 500;
+}
+
+.contenedor-servicio h2 a 
+{
+    color: #5f889a;
+}
+
+.contenedor-servicio p
+{
+    color: #737373;
+}
+
+.contenedor-imagen-servicio > h3
+{
+    color:#fff;
+}
+
+.contenedor-imagen-servicio > div h3
+{
+    font-weight: 400;
+}
+
+.btn-mas-info-servicios
+{
+    color: #7794f7;
+    background-color: transparent;
+    background-image: none;
+    border-color: #7794f7 !important;
+    border-radius: 1rem;
+    transition: all .4s ease-in-out !important;
+    border: 1px solid #7794f7;
+    margin-top: 18px;
+    
+}
+a.btn-mas-info-servicios:link
+{
+    text-decoration: none;
+}
+.btn-mas-info-servicios:hover
+{
+    background-color:#7794f7 !important;
+    color: #fff !important;
+}
+
+/*SERVICIOS*/
+
+div.contenedor-evento
+{
+    transition: all .5s ease;
+    z-index: 100;
+}
+div.contenedor-evento:hover
+{
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    transform: translateY(-10px);
+}
+
+span.tipo-evento
+{
+    color: #fff;
+    background: #54508b;
+    padding: 2px 20px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    font-size: .8em; height: 25px;
+}
+
+p.descripcion-evento
+{
+    text-align: justify;
+    font-size: .9em;
+    color: #97bccc;
+    line-height: 1.5em;
+}
+span.inversion
+{
+    color: #97bccc; font-style: italic; font-size: 0.9em;
+}
+span.evento-costo
+{
+    color: #3999e6;
+    font-size: 1.8em;
+}
+span.evento-costo > small
+{
+    font-size: 70%
+}
+a.boton-informes-evento
+{
+    text-decoration: none;
+    padding: 10px 40px;
+    background: #4cc5a1;
+    color: #fff;
+    border-bottom: 2px solid #3da081;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+}
+h2.title-event
+{
+    font-size: 1.2em;
+    border-bottom: thin dashed;
+}
+span.hora-evento
+{
+    padding-left: 32px;
+    padding-top: 1px;
+    background: url(../img/time.png) no-repeat;
+    height: 31px;
+    /* overflow: auto; */
+    float: left;
+    /* margin-left: 40px; */
+    font-size: .9em;
+}
+.eventos-pasados img {
+    opacity: 0.5;
+}
+/*EVENTOS*/
+
+div.contenedor-evento-hero
+{
+    background-color: red;
+    margin-top: 81px;
+    height: 419px;
+    background-color: rgba(35,110,171,.8);
+}
+
+div.contenedor-evento-hero h1
+{
+    font-weight: 600;
+    margin: 0 20px;
+}
+
+div.contenedor-evento-hero p
+{
+    margin: 0 20px;
+}
+
+p.tipo-event
+{
+    margin: 0 !important;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+}
+
+p.precio-evento-hero
+{
+    font-size: 1.7em;
+}
+
+p.precio-evento-hero span
+{
+    font-size: .8em;
+}
+
+div.contenedor-evento i
+{
+    font-size: 1.4em;
+}
+
+div.eventos-pasados div.contenedor-evento div.card-body
+{
+    height: 146px;
+    overflow: hidden;
+    transition: all .4s ease-in-out;
+}
+
+div.card-body-activo
+{
+    height: 440px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
