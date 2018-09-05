@@ -14,7 +14,7 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif !important;
 }
 
 /*
@@ -112,6 +112,22 @@ textarea {
     }   
 }
 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+{
+
+
+    .ver-movil
+    {
+        display: inline-block !important;
+    }
+
+    .ocultar-movil
+    {
+        display: none !important;
+    } 
+
+}
+
 .ocultar-pc
 {
     display: none;
@@ -120,6 +136,42 @@ textarea {
 .ver-pc
 {
     display: inline-block;
+}
+
+/**ROTATE**/
+.faCog {
+  display: inline-block;
+  -webkit-animation: spin 2s infinite linear;
+    -moz-animation: spin 2s infinite linear;
+    -o-animation: spin 2s infinite linear;
+    animation: spin 2s infinite linear;
+}
+
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@-o-keyframes spin {
+  0% {
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    -o-transform: rotate(359deg);
+  }
 }
 
 header
@@ -695,9 +747,47 @@ div.card-body-activo
 }
 
 
+/************MOVIL***************/
 
+div.contenedor-menu
+{
+    margin-top: 72px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,.7);
+    position: absolute;
+    z-index:200;
+    position: fixed;
+    transition: all .6s ease-in-out;
+}
 
+.ocultar
+{
+     transform: translateX(-100%);
+}
 
+div.contenedor-menu ul
+{
+    width: 100%;
+}
+
+div.contenedor-menu ul li a
+{ padding: 5px;
+    /*border-bottom: 1px solid #fff;*/
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.1em;
+}
+
+.icono-menu-movil
+{
+    transition: all .6s ease-in-out; 
+}
+
+.icono-menu-movil.rotar
+{
+    transform: rotate(90deg) !important;   
+}
 
 
 

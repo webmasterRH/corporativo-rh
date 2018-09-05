@@ -21,12 +21,16 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+  <script src="js/sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="css/sweetalert2.min.css">
+
 </head>
 
 <body>
   
-  <?php include('includes/header.php') ?>
+  <!-- <?php include('includes/header.php') ?> -->
   <!-- Header -->
+  <?php include('includes/menu-movil.php') ?>
   <div class="hero-home">
       <div class="row p-0 m-0 d-flex align-items-center contenedor-texto-hero">
         <div class="container">
@@ -46,7 +50,9 @@
         </div>
       </div>
      <?php include('includes/menu.php') ?>
+    
   </div>
+
   <!-- Hero -->
 <main>
     <section>
@@ -150,22 +156,22 @@
           <div class="col-md-12 col-lg-6 form-home aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200" data-aos-once="true">
             <p class="text-center m-0"><small><i>Escriba sus datos y en breve un ejecutivo se comunicara con usted</i></small></p>
             <div class="col-12 p-4" style="border:solid 1px #DDDDDD">
-              <form>
+              <form id="formulario-contacto">
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="*Nombre" required="">
+                  <input id="nombre" name="name" type="text" class="form-control" placeholder="*Nombre" required>
                 </div>
                 <div class="form-group">                 
-                   <input type="text" class="form-control" placeholder="Empresa">
+                   <input type="text" id="empresa" name="company" class="form-control" placeholder="Empresa">
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" placeholder="*Correo electronico" required="">
+                  <input type="email" class="form-control" id="correo" name="email" placeholder="*Correo electronico" required>
                 </div>
                 <div class="form-group">                 
-                  <input type="text" class="form-control" placeholder="*Movil" required="">
+                  <input type="text" class="form-control" id="telefono" name="phone" placeholder="*Movil" required>
                 </div>
                 <div class="form-group">
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>-Elegir Servicio-</option>
+                  <select class="form-control" id="servicio" name="services" required>
+                    <option value="">-Elegir Servicio-</option>
                     <option value="Capacitación">Capacitación</option>
                     <option value="Clima Laboral">Clima Laboral</option>
                     <option value="Estudios Socioeconómicos">Estudios Socioeconómicos</option>
@@ -175,9 +181,10 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" placeholder="Mensaje" rows="4"></textarea>
+                  <textarea class="form-control" id="comentario" name="commentary" placeholder="Mensaje" rows="4"></textarea>
                 </div>
-                <button type="submit" class=" p-1 boton-formulario">Enviar</button>
+
+                <button type="submit" class=" p-1 boton-formulario">Enviar <i id="cargando-email" class="icon-spin3 faCog"></i></button>
               </form>
             </div> 
           </div>       
@@ -208,6 +215,41 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <script type="text/javascript">
+    $( document ).ready(function() {
+         $('#cargando-email').hide();
+      });
+    $("#formulario-contacto").on('submit', function(evt){
+        evt.preventDefault();
+        $('#cargando-email').show();
+        $.ajax({
+              url : 'email.php',
+              data : $("#formulario-contacto").serialize(), 
+              type : 'POST',
+              success : function(json) {
+                $('#cargando-email').hide();
+                  swal(
+                      'E-mail enviado correctamente.',
+                      'Nos pondremos en contacto con usted tan pronto como sea posible.',
+                      'success'
+                    )
+              },
+           
+              // código a ejecutar si la petición falla;
+              // son pasados como argumentos a la función
+              // el objeto de la petición en crudo y código de estatus de la petición
+              error : function(xhr, status) {
+                  alert('Disculpe, existió un problema');
+              },
+           
+              // código a ejecutar sin importar si la petición falló o no
+              // complete : function(xhr, status) {
+              //     alert('Petición realizada');
+              // }
+        });
+        
+    });
+  </script>
 </body>
 
 </html>
